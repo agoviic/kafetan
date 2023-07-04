@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CalsDown_ProjekatZaKol</string>
+    <string name="kafetan">Kafetan</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="neki_naslov">Neki naslov</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cilj">Ostvarili ste 65% dnevnog cilja.</string>
+    <string name="logout">Logout</string>
+</resources>

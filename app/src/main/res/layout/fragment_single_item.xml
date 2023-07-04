@@ -1,0 +1,66 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.calsdown_projekatzakol.ui.SingleItemFragment"
+    android:background="@drawable/wallpaper_main">
+
+    <ImageView
+        android:id="@+id/ivSlika"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/coffee_brand1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="24dp"
+        />
+    <TextView
+        android:id="@+id/tvDrinkId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/neki_naslov"
+        android:textColor="@color/light_grey"
+        app:layout_constraintTop_toBottomOf="@+id/ivSlika"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="22sp"
+        />
+    <TextView
+        android:id="@+id/tvInstruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/neki_naslov"
+        android:textColor="@color/light_grey"
+        app:layout_constraintTop_toBottomOf="@+id/tvDrinkId"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:textSize="22sp"
+        />
+
+    <ImageView
+        android:id="@+id/star"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/fav_icon_star"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="128dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="80dp"
+        android:clickable="true"/>
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        app:layout_constraintStart_toEndOf="@+id/star"
+        android:layout_marginStart="24dp"
+        android:src="@drawable/back"
+        app:layout_constraintTop_toTopOf="@+id/star"
+        android:clickable="true"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

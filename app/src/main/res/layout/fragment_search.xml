@@ -1,0 +1,52 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.calsdown_projekatzakol.ui.SearchFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/wallpaper_main">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/searchField"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:hint="Search..."
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:hintTextColor="@color/white"
+        android:textColorHint="@color/white"
+        app:boxCornerRadiusBottomEnd="8dp"
+        app:boxCornerRadiusBottomStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp"
+        app:boxCornerRadiusTopStart="8dp"
+        app:boxStrokeColor="@color/white">
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+<androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvKafa"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:listitem="@layout/item"
+        android:layout_marginBottom="45dp"
+        android:layout_marginTop="40dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
